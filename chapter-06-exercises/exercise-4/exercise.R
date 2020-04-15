@@ -45,3 +45,4 @@ print(paste(
   describe_difference("longer words first", "short"),
   describe_difference("not doublely long", "not doublely long")
 ))
+
