@@ -15,7 +15,7 @@ sentence <- tolower("This is a long sentence that I will make lowercase.")
 # Use the `strsplit()` function to split the sentence into a vector of letters.
 # Hint: split on `""` to split every character
 # Note: this will return a _list_ with 1 element (which is the vector of letters)
-letters_list <- letters_list <- strsplit(sentence, "")
+letters_list <- strsplit(sentence, "")
 
 # Extract the vector of letters from the resulting list
 letters <- letters_list[[1]]
