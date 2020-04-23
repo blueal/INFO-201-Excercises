@@ -44,3 +44,4 @@ frquencies <- as.list(sapply(unique_letters, count_occurrences, letters))
 
 # Print the resulting list of frequencies
 print(frquencies)
+
