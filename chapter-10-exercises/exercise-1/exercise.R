@@ -2,11 +2,11 @@
 
 # Create a vector of the number of points the Seahawks scored in the first 4 games
 # of the season (google "Seahawks" for the scores!)
-raw_scores_sea <- c(21,13,30,12) #2019 Season
+raw_scores_sea <- c(21,28,27,27) #2019 Season
 
 # Create a vector of the number of points the Seahwaks have allowed to be scored
 # against them in each of the first 4 games of the season
-raw_scores_opp <- c(26,27,24,28)
+raw_scores_opp <- c(20,26,33,10)
 
 # Combine your two vectors into a dataframe called `games`
 games <- data.frame("Seahawks" = raw_scores_sea, "Opponent" = raw_scores_opp)
@@ -18,13 +18,13 @@ games <- data.frame("Seahawks" = raw_scores_sea, "Opponent" = raw_scores_opp)
 games$diff <- games$Seahawks - games$Opponent
 
 # Create a new column "won" which is TRUE if the Seahawks won the game
-
+games$won <- (games$diff > 0)
 
 # Create a vector of the opponent names corresponding to the games played
-
+opponents <- c("Bengals", "Steelers", "Saints", "Cardinals")
 
 # Assign your dataframe rownames of their opponents
-
+games$OpponentName <- opponents
 
 # View your data frame to see how it has changed!
-
+View(games)
